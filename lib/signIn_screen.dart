@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/homepage.dart';
 import 'package:ecommerce_app/login_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -151,26 +152,41 @@ class SignInScreen extends StatelessWidget {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Colors.purpleAccent,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(14),
-                  child: Text(
-                    "Sign Up",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
+            // Padding(
+            //   padding: const EdgeInsets.all(8.0),
+            //   child: Container(
+            //     decoration: BoxDecoration(
+            //       color: Colors.purpleAccent,
+            //       borderRadius: BorderRadius.circular(10),
+            //     ),
+            //     child: Padding(
+            //       padding: const EdgeInsets.all(14),
+            //       child: Text(
+            //         "Sign Up",
+            //         style: TextStyle(
+            //           color: Colors.white,
+            //           fontSize: 16,
+            //           fontWeight: FontWeight.bold,
+            //         ),
+            //       ),
+            //     ),
+            //   ),
+            // ),
+            TextButton(
+              style: TextButton.styleFrom(
+                foregroundColor: Colors.black,
+                padding: const EdgeInsets.all(28.0),
+                backgroundColor: Color(0xFFE988C9),
+              ),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: ((context) => HomeSCreen())));
+              },
+              child: Text(
+                'Sign Up',
               ),
             ),
+
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [

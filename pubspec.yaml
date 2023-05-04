@@ -85,6 +85,9 @@ flutter:
     - assets/item/bagg.jpg
     - assets/item/necklace.jpg
     - assets/item/bracelet.jpg
+    - assets/item/Maxi dress.htm
+    - assets/item/tshirt.png
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

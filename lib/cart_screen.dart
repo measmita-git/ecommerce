@@ -15,6 +15,8 @@ class CartModel extends ChangeNotifier {
     ["Hoodie", "1800", "assets/item/hoodie.jpg", Colors.purple],
     ["Necklace", "1800", "assets/item/necklace.jpg", Colors.purple],
     ["Bracelet", "1800", "assets/item/bracelet.jpg", Colors.purple],
+    ["Maxi Dress", "1550", "assets/item/Maxi dress.htm", Colors.green],
+    ["Gown", "6000", "assets/item/dress.png", Colors.green],
   ];
 
   //list of cart items

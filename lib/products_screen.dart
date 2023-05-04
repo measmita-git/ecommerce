@@ -21,7 +21,7 @@ class ProductSCreenTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(20.0),
+      padding: const EdgeInsets.all(8.0),
       child: Container(
         decoration: BoxDecoration(
           color: Color.fromARGB(255, 241, 235, 235),
@@ -32,7 +32,7 @@ class ProductSCreenTile extends StatelessWidget {
           children: [
             Image.asset(
               imagePath,
-              height: 300,
+              height: 120,
             ),
             Text(itemName),
             MaterialButton(
