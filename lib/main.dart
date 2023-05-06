@@ -2,11 +2,7 @@
 // import 'package:ecommerce_app/signIn_screen.dart';
 // import 'package:ecommerce_app/splash_screen.dart';
 import 'package:ecommerce_app/cart_screen.dart';
-import 'package:ecommerce_app/cartpage.dart';
-import 'package:ecommerce_app/login_screen.dart';
 import 'package:ecommerce_app/signIn_screen.dart';
-
-import 'package:ecommerce_app/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
