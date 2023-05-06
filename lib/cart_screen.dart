@@ -5,18 +5,23 @@ class CartModel extends ChangeNotifier {
   final List _shopItems = [
     //[itemName,itemPrice,imagePath,color]
 
-    ["Tshirt", "600", "assets/item/tshirt.png", Colors.green],
-    ["Varsity Jacket", "3200", "assets/item/varsity.jpg", Colors.red],
-    ["Jacket", "2600", "assets/item/jacket.png", Colors.black],
-    ["Sneakers", "2800", "assets/item/snicker.png", Colors.grey],
-    ["Bag", "1600", "assets/item/bag.png", Colors.green],
-    ["Bodycon dress", "1500", "assets/item/bodycon.jpg", Colors.green],
-    ["Flannel", "1100", "assets/item/Flannel.jpg", Colors.green],
+    ["Tshirt", "600", "assets/item/tshirt.png", Colors.purple],
+    ["Varsity Jacket", "3200", "assets/item/varsity.jpg", Colors.purple],
+    ["Jacket", "2600", "assets/item/jacket.png", Colors.purple],
+    ["Sneakers", "2800", "assets/item/sneaker.png", Colors.purple],
+    ["Bag", "1600", "assets/item/bag.png", Colors.purple],
+    ["Bodycon dress", "1500", "assets/item/bodycon.jpg", Colors.purple],
+    ["Flannel", "1100", "assets/item/Flannel.jpg", Colors.purple],
     ["Hoodie", "1800", "assets/item/hoodie.jpg", Colors.purple],
     ["Necklace", "1800", "assets/item/necklace.jpg", Colors.purple],
     ["Bracelet", "1800", "assets/item/bracelet.jpg", Colors.purple],
-    ["Maxi Dress", "1550", "assets/item/Maxi dress.htm", Colors.green],
-    ["Gown", "6000", "assets/item/dress.png", Colors.green],
+    ["Skirt", "1950", "assets/item/skirt.jpg", Colors.purple],
+    ["Nike", "6000", "assets/item/nike shoes.jpg", Colors.purple],
+    ["Converse", "3200", "assets/item/converse.jpg", Colors.purple],
+    ["Sunglass", "1800", "assets/item/sunglass.jpg", Colors.purple],
+    ["Watch", "3800", "assets/item/watch.jpg", Colors.purple],
+    ["HandBag", "1600", "assets/item/bag.jpg", Colors.purple],
+    ["Cardigan", "1600", "assets/item/cardigan.jpg", Colors.purple],
   ];
 
   //list of cart items

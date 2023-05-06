@@ -72,21 +72,24 @@ flutter:
     - assets/item/logo.jpg
     - assets/item/jacket.png
     - assets/item/tshirt.png
-    - assets/item/snicker.png
+    - assets/item/sneaker.png
     - assets/item/bag.png
     - assets/item/intro.png
     - assets/item/bodycon.jpg
     - assets/item/cardigan.jpg
+    - assets/item/skirt.jpg
     - assets/item/Flannel.jpg
     - assets/item/varsity.jpg
     - assets/item/hoodie.jpg
     - assets/item/tops.jpg
     - assets/item/watch.jpg
-    - assets/item/bagg.jpg
+    - assets/item/bag.jpg
     - assets/item/necklace.jpg
     - assets/item/bracelet.jpg
-    - assets/item/Maxi dress.htm
+    - assets/item/nike shoes.jpg
+    - assets/item/converse.jpg
     - assets/item/tshirt.png
+    - assets/item/sunglass.jpg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
