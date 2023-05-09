@@ -1,7 +1,6 @@
-// import 'package:ecommerce_app/login_screen.dart';
-// import 'package:ecommerce_app/signIn_screen.dart';
-// import 'package:ecommerce_app/splash_screen.dart';
 import 'package:ecommerce_app/cart_screen.dart';
+import 'package:ecommerce_app/homepage.dart';
+import 'package:ecommerce_app/login_screen.dart';
 import 'package:ecommerce_app/signIn_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -19,7 +18,11 @@ class MyApp extends StatelessWidget {
       create: (context) => CartModel(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: SignInScreen(),
+        routes: {
+          '/': (context) => SignInScreen(),
+          '/LoginScreen': (context) => LoginScreen(),
+          '/HomePage': (context) => HomeSCreen(),
+        },
       ),
     );
   }

@@ -1,4 +1,3 @@
-import 'package:ecommerce_app/homepage.dart';
 import 'package:ecommerce_app/signIn_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -97,10 +96,7 @@ class LoginScreen extends StatelessWidget {
                   // ),
                   child: TextButton(
                       onPressed: (() {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: ((context) => HomeSCreen())));
+                        Navigator.of(context).pushNamed('/HomePage');
                       }),
                       child: Text("Login")),
                 ),

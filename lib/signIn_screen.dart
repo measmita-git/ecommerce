@@ -1,4 +1,3 @@
-import 'package:ecommerce_app/homepage.dart';
 import 'package:ecommerce_app/login_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -182,20 +181,20 @@ class SignInScreen extends StatelessWidget {
                 //     ),
                 //   ),
                 // ),
-                TextButton(
-                  style: TextButton.styleFrom(
-                    foregroundColor: Colors.black,
-                    padding: const EdgeInsets.all(6.0),
-                    backgroundColor: Color(0xFFE988C9),
-                  ),
-                  onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: ((context) => HomeSCreen())));
-                  },
-                  child: Text(
-                    'Sign Up',
+                Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: TextButton(
+                    style: TextButton.styleFrom(
+                      foregroundColor: Colors.black,
+                      padding: const EdgeInsets.all(6.0),
+                      backgroundColor: Color(0xFFE988C9),
+                    ),
+                    onPressed: () {
+                      Navigator.of(context).pushNamed('/HomePage');
+                    },
+                    child: Text(
+                      'Sign Up',
+                    ),
                   ),
                 ),
 

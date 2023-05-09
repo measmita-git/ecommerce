@@ -3,11 +3,17 @@ import 'package:flutter/material.dart';
 
 import 'package:provider/provider.dart';
 
-class CartPage extends StatelessWidget {
+class CartPage extends StatefulWidget {
   const CartPage({super.key});
 
   @override
+  State<CartPage> createState() => _CartPageState();
+}
+
+class _CartPageState extends State<CartPage> {
+  @override
   Widget build(BuildContext context) {
+    // int quantity = 0;
     return Scaffold(
       appBar: AppBar(
         title: Text("My Cart"),
@@ -35,11 +41,17 @@ class CartPage extends StatelessWidget {
                           ),
                           title: Text(value.cartItems[index][0]),
                           subtitle: Text('\MRP.' + value.cartItems[index][1]),
-                          trailing: IconButton(
-                            icon: Icon(Icons.cancel),
-                            onPressed: () =>
-                                Provider.of<CartModel>(context, listen: false)
-                                    .removeItemFromCart(index),
+                          // trailing: IconButton(
+                          //   icon: Icon(Icons.cancel),
+                          //   onPressed: () =>
+                          //       Provider.of<CartModel>(context, listen: false)
+                          //           .removeItemFromCart(index),
+                          // ),
+                          trailing: ElevatedButton(
+                            onPressed: () {
+                              // quantity++;
+                            },
+                            child: Icon(Icons.add),
                           ),
                         ),
                       ),
