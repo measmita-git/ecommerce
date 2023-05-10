@@ -1,7 +1,9 @@
 import 'package:ecommerce_app/cart_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'package:provider/provider.dart';
+import 'roundIconButton.dart';
 
 class CartPage extends StatefulWidget {
   const CartPage({super.key});
@@ -47,11 +49,15 @@ class _CartPageState extends State<CartPage> {
                           //       Provider.of<CartModel>(context, listen: false)
                           //           .removeItemFromCart(index),
                           // ),
-                          trailing: ElevatedButton(
-                            onPressed: () {
-                              // quantity++;
-                            },
-                            child: Icon(Icons.add),
+                          trailing: Row(
+                            children: [
+                              RoundIconButton(
+                                onPressed: () {
+                                  setState(() {});
+                                },
+                                icon: (FontAwesomeIcons.minus),
+                              ),
+                            ],
                           ),
                         ),
                       ),

@@ -66,15 +66,18 @@ class HomeSCreen extends StatelessWidget {
                       childAspectRatio: 1 / 1.2,
                     ),
                     itemBuilder: (context, index) {
-                      return ProductSCreenTile(
-                        itemName: value.shopItems[index][0],
-                        itemPrice: value.shopItems[index][1],
-                        imagePath: value.shopItems[index][2],
-                        color: value.shopItems[index][3],
-                        onPressed: () {
-                          Provider.of<CartModel>(context, listen: false)
-                              .addItemToCart(index);
-                        },
+                      return TextButton(
+                        onPressed: () {},
+                        child: ProductSCreenTile(
+                          itemName: value.shopItems[index][0],
+                          itemPrice: value.shopItems[index][1],
+                          imagePath: value.shopItems[index][2],
+                          color: value.shopItems[index][3],
+                          onPressed: () {
+                            Provider.of<CartModel>(context, listen: false)
+                                .addItemToCart(index);
+                          },
+                        ),
                       );
                     },
                   );
